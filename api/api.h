@@ -41,6 +41,8 @@ typedef uint32_t* const uint32_stack_t, *uint32_heap_t;
 typedef float* const float_stack_t, *float_heap_t;
 /// \brief Zeigertyp auf double; _stack_t geprueft, _heap_t NULL-faehig.
 typedef double* const double_stack_t, *double_heap_t;
+/// \brief Zeigertyp auf void* (user_data) _stack_t geprueft, _heap_t NULL-faehig.
+typedef void* user_data_t, *const user_data_stack_t, *user_data_heap_t;
 
 // Aus einem x_heap_t Pointer kann nach NULL-Prüfung ein x_stack_t werden!
 //
